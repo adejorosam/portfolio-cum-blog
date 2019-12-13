@@ -5,7 +5,6 @@ from .models import Portfolio
 
 def project_index(request):
     portfolios = Portfolio.objects.all()
-    print(portfolios)
     return render(request,'portfolio/project_index.html',{'portfolios':portfolios})
 
 def project_details(request,pk):

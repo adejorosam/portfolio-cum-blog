@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-<!--{% load static %}-->
+{% load static %}
 {% block page_content %}
 <h1>Projects</h1>
 <div class="row">
     {% for portfolio in portfolios %}
     <div class="col-md-4">
         <div class="card mb-2">
-            <!--<img class="card-img-top" src="{% static portfolio.image %}">-->
+            <img class="card-img-top" src="static/img/project1.png">
             <div class="card-body">
                 <h5 class="card-title">{{ portfolio.title }}</h5>
                 <p class="card-text">{{ portfolio.description }}</p>
